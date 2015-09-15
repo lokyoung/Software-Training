@@ -37,8 +37,8 @@ public class CustomerBiz {
         System.out.println("客户信息");
         for (Customer customer : alc) {
             System.out.print(customer.getName() + "\t"
-                           + customer.getAge()  + "\t"
-                           + customer.isCreditCard());
+                    + customer.getAge() + "\t"
+                    + customer.isCreditCard());
             System.out.println();
         }
     }
