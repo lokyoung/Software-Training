@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- <script src="1501.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+  <p id="p1">在下列字符中：</p>
+  <p>Amercia</p>
+  <p>Greece</p>
+  <p>Britain</p>
+  <p>Canada</p>
+  <p>China</p>
+  <p>Egypt</p>
+</body>
+<script type="text/javascript">
+  var a = document.getElementsByTagName("p");
+  var num = 0;
+  for (var i = 0; i < a.length; i++) {
+    var l = a[i].innerHTML.toLowerCase();
+    if(l.indexOf("a") >= 0){
+      num = num + 1;
+    }
+  }
+  document.write("共有"+num+"个字符串包含A或a");
+</script>
+
+</html>

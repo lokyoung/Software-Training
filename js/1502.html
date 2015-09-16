@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    var a = parseInt(prompt("请输入第一个数:"));
+    var b = parseInt(prompt("请输入第二个数"));
+    var s = prompt("请输入运算符");
+    var c;
+    switch (s) {
+      case "+":
+        c = a + b;
+        break;
+      case "-":
+        c = a - b;
+        break;
+      case "*":
+        c = a * b;
+        break;
+      case "/":
+        c = a / b;
+        break;
+    }
+    alert("运算结果是:"+c);
+  </script>
+</body>
+</html>
