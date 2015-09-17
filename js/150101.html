@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+  document.write("在以下字符中<br/>America<br/>Greece<br/>Canada<br/>")
+  var a = new Array("America", "Greece", "Canada");
+  var num = 0;
+  for(var i=0; i<a.length; i++){
+    var l = a[i].toLowerCase();
+    if(l.indexOf("a")>=0){
+        num = num + 1;
+    }
+  }
+  document.write(num);
+</script>
+</html>

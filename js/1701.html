@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript">
+    function sub(){
+      var b = confirm('您本次购买的商品信息如下：\n'
+              +'商品名称：诺基亚 \n'
+              +'商品数量：1件 \n'
+              +'商品单价：2200元 \n'
+              +'运费：20元 \n'
+              +'费用总计：2220元\n'
+              +'请确认以上信息是否有误！！！');
+      if(b){
+        alert('提交完成！');
+      }
+    }
+  </script>
+</head>
+<body>
+  <center>
+    <table border="1px">
+      <tr>
+        <td colspan="5">简易购物车</td>
+      </tr>
+      <tr>
+        <td>商品名称</td>
+        <td>数量（件）</td>
+        <td>单价（元）</td>
+        <td>运费（元）</td>
+        <td>合计（元）</td>
+      </tr>
+      <tr>
+        <td>诺基亚N95</td>
+        <td>1</td>
+        <td>2000</td>
+        <td>20</td>
+        <td>2220</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <input type="button" value="提交订单" onclick="sub()"/>
+          <input type="button" value="全屏显示">
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>

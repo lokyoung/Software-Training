@@ -7,15 +7,21 @@
 <body>
 
   <script type="text/javascript">
+    function cal(){
     var a = parseInt(prompt("请输入考试科目数量"));
     var c = 0;
     if(a>0){
       for(var i=1; i<=a; i++){
           var b= parseInt(prompt("请输入第"+i+"门课程的成绩:"));
-          if(b<0){
-            alert("成绩不能是负数");
+          if(b>=0){
+            c = c +b;
+          } else if(b<0){
+            alert("成绩不能为负数！");
+            return;
+          } else{
+            alert("请输入数字！");
+            return;
           }
-          c = c + b;
       }
       alert(a + "门课总成绩是:" + c);
     } else if(a<=0){
@@ -23,6 +29,8 @@
     } else{
       alert("请输入数字！")
     }
+  }
+  cal();
   </script>
 </body>
 </html>
