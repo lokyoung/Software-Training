@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("#p1").click(function(){
+        $("#p1").css({"background-color": "#00FFFF", "font-color": "pink"});
+      });
+      $("span").click(function(){
+        $("span").css({"background-color": "#FF60AF", "font-color": "blue"});
+        $("#spanin").css("font-size","20px");
+        $("#spanin1").css("background-color", "#00FFFF");
+        $(".a1").css("background-color", "#00FFFF");
+      });
+    });
+  </script>
+</head>
+<body>
+  <h2>英雄联盟</h2>
+  <p id="p1">英雄联盟，简称LOL。</p>
+  <p>由Riot Games开发，为3D竞技场游戏。<span>其主创团队为开发<span id="spanin">DOTA</span>的<span id="spanin1">即时对战</span>的开发团队。</span><a href="#">更多详情</a></p>
+  <h2>目录</h2>
+  <ul>
+    <li><a href="#" class="a1">开发团队</a></li>
+    <li><a href="#">游戏周边</a></li>
+    <li><a href="#">游戏介绍</a></li>
+    <li><a href="#">配置需求</a></li>
+    <li><a href="#">游戏背景</a></li>
+  </ul>
+</body>
+</html>

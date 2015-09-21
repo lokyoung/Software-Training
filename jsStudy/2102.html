@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/jquery-1.11.3.min.js">
+  </script>
+  <script type="text/javascript">
+    $(function(){
+      $("body").css("font-size", "18px");
+      $("p").css({"font-size": "20px", "color": "#CCC"});
+      $("span").css("color", "red");
+      $("#p1").css("color", "green");
+      $("#s1").css("background-color", "pink");
+      $(".single").css("background-color", "#CCC");
+      $("a").css("font","15px solid blue");
+      $("ul").css({"list-style": "none", "margin": "0px", "padding": "0px"});
+      $("li").css({"margin": "0px", "padding": "0"});
+    });
+  </script>
+</head>
+<body>
+  <p>淘乐，发现更多生活，<span>快乐</span>就在你身边......</p>
+  <p id="p1">近期热门......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多</p>
+  <ul>
+    <li class="single">Java入门到精通</li>
+    <li>Java编程思想</li>
+    <li class="single">Rails Tutorial</li>
+    <li>Ruby元编程</li>
+    <li id="s1">Python</li>
+    <li>Java核心技术</li>
+    <li class="single">Hibernate</li>
+    <li>SSH整合</li>
+  </ul>
+  <a href="#">更多排名</a>
+</body>
+</html>
