@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    #div1 {
+      width: 300px;
+      border: 1px solid pink;
+    }
+  </style>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("input").click(function(){
+        $("li:gt(5)").toggle();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="div1">
+    <ul>
+      <li>手机通讯，数码电器<hr/></li>
+      <li>食品饮料，酒水果蔬<hr/></li>
+      <li>进口食品，进口牛奶<hr/></li>
+      <li>美容化妆，个人护理<hr/></li>
+      <li>母婴用品，个人护理<hr/></li>
+      <li>厨卫清洁，纸<hr/></li>
+      <li>生活电器<hr/></li>
+      <li>汽车生活<hr/></li>
+      <li>电脑、外设、办公用品<hr/></li>
+      <input type="button" value="展开或关闭菜单">
+    </ul>
+  </div>
+</body>
+
+</html>

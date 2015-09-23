@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    .border1{
+      border: 1px solid blue;
+    }
+  </style>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("#i1").focus(function(){
+        $(this).addClass("border1");
+      });
+      $("#i1").blur(function(){
+        $(this).removeClass("border1");
+      });
+      $("#i2").focus(function(){
+        $(this).addClass("border1");
+      });
+      $("#i2").blur(function(){
+        $(this).removeClass("border1");
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>账号：</td>
+      <td>
+        <input id="i1" type="text">
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>密码：</td>
+      <td>
+        <input id="i2" type="password">
+      </td>
+      <td><a href="#">忘记密码</a></td>
+    </tr>
+  </table>
+</body>
+
+</html>

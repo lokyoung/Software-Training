@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("input").focus(function(){
+        $(this).val("");
+      }).blur(function(){
+        $(this).val("通行证账号/邮箱");
+      });
+    });
+  </script>
+  <style type="text/css">
+    body{
+      color: grey;
+    }
+    input{
+      color: grey;
+      border: 1px solid #99FFFF;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="2">YY安全中心 统一登录</td>
+    </tr>
+    <tr>
+      <td colspan="2">谨防假冒</td>
+    </tr>
+    <tr>
+      <td><input type="text" value="通行证账号/邮箱"></td>
+      <td>注册新账号</td>
+    </tr>
+  </table>
+</body>
+</html>
