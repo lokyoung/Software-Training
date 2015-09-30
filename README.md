@@ -57,3 +57,10 @@ java类的抽象和封装，练习程序Dog类和Penguin类
 
 ######9.29日
 java的继承和抽象
+
+######9.30日
+java中的接口。
+测试程序以手机类(MobilePhone)为基类，两个子类为普通手机(CommonPhone)和智能手机(AptitudePhone)。
+手机有两个属性，品牌(brand)和型号(type)，有两个方法，打电话(call)和发短信(sendInfo)。
+除此之外，有三个功能性的接口，一个是播放接口(Play)，一个是网络接口(Network)，一个是拍照接口(TakePhoto)。
+其中普通手机只能实现播放接口，智能手机可以实现以上三个接口。
