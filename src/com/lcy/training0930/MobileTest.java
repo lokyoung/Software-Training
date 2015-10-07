@@ -10,6 +10,7 @@ public class MobileTest {
         cm.play("Season in the sun");
         cm.sendInfo();
         System.out.println();
+
         AptitudePhone ap = new AptitudePhone("苹果", "6");
         ap.call();
         ap.sendInfo();
